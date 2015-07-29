@@ -1,2 +1,2 @@
 # matlab_mongodb
-MATLAB functions that use the java driver for access to Mongodb database
+MATLAB functions that use the Mongodb java driver
