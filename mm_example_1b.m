@@ -20,7 +20,7 @@ mm_readxls(col,wc,[],[],true) ;                         % generate testdata
 %% read some documents to check if all went well
 % (precise extraction of fields will be shown later)
 
-mycur = col.find('').skip(18).limit(5) ;
+mycur = col.find('').skip(18).limit(5) ;                % list 5 documents after skipping the first 18
 fprintf('cursor contains %.0f documents\n',mycur.size())
 while mycur.hasNext()                                 	% when more data is available
     mycur.next() ;                                   	% cursor points to next document

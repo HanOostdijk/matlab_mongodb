@@ -14,7 +14,7 @@ db  = m.getDB('matlab_mongodb');                    	% handle to a database (cre
 mm_drop_collection( db,'transactions' )              	% drop collection from this database
 col = db.getCollection('transactions') ;             	% handle to collection 'transaction' (create if non-existing)
 %% specify xls-file from which to read transactions
-xls_file.name   = 'T:\Accounts\XLS150726180028.xls';  % name of xls-file                           
+xls_file.name   = 'T:\Accounts\XLS150726180028.xls';    % name of xls-file                           
 xls_file.sheet  =   'Sheet0';                           % sheet of transaction data
 xls_file.range  =   '';                                 % range of transaction data  (empty whole sheet)  
 
