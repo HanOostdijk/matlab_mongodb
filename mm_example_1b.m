@@ -12,7 +12,7 @@ wc  = WriteConcern(1);                               	% indicate WriteConcern to
                     % 'Wait for acknowledgement, but don't wait for secondaries to replicate'
 db  = m.getDB('matlab_mongodb');                    	% handle to a database (create if non-existing)
 mm_drop_collection( db,'transactions' )              	% drop collection from this database
-col = db.getCollection('transactions') ;             	% handle to collection 'transaction' (create if non-existing)
+col = db.getCollection('transactions') ;             	% handle to collection 'transactions' (create if non-existing)
 
 % generate test mutations
 mm_readxls(col,wc,[],[],true) ;                         % generate testdata 
@@ -20,10 +20,6 @@ mm_readxls(col,wc,[],[],true) ;                         % generate testdata
 %% read some documents to check if all went well
 % (precise extraction of fields will be shown later)
 
-mycur = col.find('').skip(18).limit(5) ;                % list 5 documents after skipping the first 18
-fprintf('cursor contains %.0f documents\n',mycur.size())
-while mycur.hasNext()                                 	% when more data is available
-    mycur.next() ;                                   	% cursor points to next document
-    x               = mycur.curr()  ;                  	% contents of this document
-    disp(x)                                             % and show it 
-end
+cur = col.find('').skip(18).limit(5) ;                  % list 5 documents after skipping the first 18
+fprintf('cursor contains %.0f documents\n',cur.size())
+mm_cursor_showcontents( cur ) ;                         % show contents (later examples will extract document fields)

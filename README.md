@@ -6,20 +6,21 @@ To run the examples I used the following configuration on Windows 8.1 (64-bit) :
 * MongoDB: mongodb-win32-x86_64-2008plus-ssl-3.1.4-signed.msi
 
 Examples of MATLAB functions that use the MongoDB java driver:
-* mm_example_1a.m : read an xls-file into MongoDB collection
-* mm_example_1b.m : generate some testdata and insert these in a MongoDB collection (for use in later examples)
+* mm_example_1a.m : reads an xls-file into MongoDB collection
+* mm_example_1b.m : generates some testdata and insert these in a MongoDB collection (for use in later examples)
 * mm_readxls.m : function used in mm_example_1(a)(b) that does the actual insert of a document in the collection
-* mm_example_2.m : list the collections and number of documents in the collections and the databases they belong to
+* mm_example_2.m : lists the collections and number of documents in the collections with the databases they belong to
+* mm_example_3.m : gives examples of queries in which certain documents and/or fields in documents are selected
 
 Utility functions used:
-* mm_drop_collection.m : drop (removes) a collection if it exists
-* mm_drop_database.m : drop (removes) a database if it exists
+* mm_cursor_showcontents.m : shows the documents that a cursor points to
+* mm_drop_collection.m : drops (removes) a collection if it exists
+* mm_drop_database.m : drops (removes) a database if it exists
 * setOptArgs.m : handles optional arguments of a function
 
 Todo:
 
-insert examples for
-* querying a collection 
+insert examples for 
 * doing aggregation (grouping) of a collection
 * mapreduce over a collection
 
