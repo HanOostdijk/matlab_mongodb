@@ -1,5 +1,5 @@
 # matlab_mongodb
-This repository contains examples that show how to use MongoDB database in the MATLAB environment with the MongoDB java driver. 
+This repository contains examples that show how to use MongoDB databases in the MATLAB environment with the MongoDB java driver. 
 To run the examples I used the following configuration on Windows 8.1 (64-bit) :
 * MATLAB: the version used was the prerelease of MATLAB 8.6 R2015b (no toolboxes necessary)
 * java driver: mongo-java-driver-3.0.2.jar 
@@ -28,8 +28,8 @@ Utility functions used:
 * setOptArgs.m : handles optional arguments of a function
 
 Acknowledgements:
- * Guillaume A. for his MATLAB Central [article] (http://uk.mathworks.com/matlabcentral/fileexchange/43171-use-of-mongodb-java-driver)
- * Yair Altman for his [checkClass](http://uk.mathworks.com/matlabcentral/fileexchange/26947-checkclass-inspect-a-java-matlab-class-object-name)
+ * Guillaume A. for his MATLAB Central [article]  (http://uk.mathworks.com/matlabcentral/fileexchange/43171-use-of-mongodb-java-driver) that inspired this repository
+ * Yair Altman for his [checkClass](http://uk.mathworks.com/matlabcentral/fileexchange/26947-checkclass-inspect-a-java-matlab-class-object-name) that helped debugging these functions
 
 
  
