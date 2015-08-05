@@ -18,6 +18,9 @@ Examples of MATLAB functions that use the MongoDB java driver:
 * mm_example_6.m : example of adding a field by using a classification
 * mm_example_7.m : example of a mapreduce
 
+mm_examples 2-6 use the testdata generated in mm_example_1b   
+mm_example_7 uses the collection from mm_example_6
+
 Utility functions used:
 * mm_cursor_showcontents.m : shows the documents that a cursor points to
 * mm_drop_collection.m : drops (removes) a collection if it exists
@@ -25,8 +28,8 @@ Utility functions used:
 * setOptArgs.m : handles optional arguments of a function
 
 Acknowledgements:
- Guillaume A. on [MATLAB Central](http://uk.mathworks.com/matlabcentral/fileexchange/43171-use-of-mongodb-java-driver)
- Yair Altman for his [checkClass](http://uk.mathworks.com/matlabcentral/fileexchange/26947-checkclass-inspect-a-java-matlab-class-object-name)
+ * Guillaume A. for his MATLAB Central [article] (http://uk.mathworks.com/matlabcentral/fileexchange/43171-use-of-mongodb-java-driver)
+ * Yair Altman for his [checkClass](http://uk.mathworks.com/matlabcentral/fileexchange/26947-checkclass-inspect-a-java-matlab-class-object-name)
 
 
  
