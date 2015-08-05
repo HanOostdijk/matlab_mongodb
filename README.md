@@ -12,6 +12,7 @@ Examples of MATLAB functions that use the MongoDB java driver:
 * mm_example_2.m : lists the collections and number of documents in the collections with the databases they belong to
 * mm_example_3.m : gives examples of queries in which certain documents and/or fields in documents are selected
 * mm_example_4.m : example of handling the results a query
+* mm_example_5.m : example of an aggregation pipeline
 
 Utility functions used:
 * mm_cursor_showcontents.m : shows the documents that a cursor points to
@@ -22,7 +23,6 @@ Utility functions used:
 Todo:
 
 insert examples for 
-* doing aggregation (grouping) of a collection
 * mapreduce over a collection
 
 
