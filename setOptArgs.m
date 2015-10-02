@@ -1,15 +1,21 @@
 function defArgs = setOptArgs(a,defArgs)
 % set non-specified optional parameters to default values
 
-% a         : arguments passed with varargin
-% defArgs   : on input default arguments
-%             on output default argument overwritten by the specified ones (if not empty)
-% adapted from Omid Khanmohamadi on matlabcentral
+%{
+idea from Omid Khanmohamadi on matlabcentral
 
-a     = a(:);
-len_a = length(a);
-ind   = false(len_a,1);
-for ctr = 1:len_a
-    if isequal(a{ctr},[]), ind(ctr) = true; end
-end
-[defArgs{~ind}] = a{~ind};
+a         : arguments passed with varargin
+defArgs   : on input default arguments
+            on output default argument overwritten by the specified ones (if not empty)
+
+example of use
+    function rhopos=matfun(rho,varargin)
+    defoptArgs	= {1e-12,'xxx'};                     	% default values for first and second optional arguments
+    optArgs     = setOptArgs(varargin,defoptArgs) ;   	% merge specified and default values
+    eps         = optArgs{1} ;                      	% resulting value for first argument
+    caption   	= optArgs{2} ;                      	% resulting value for second argument
+	....
+%}
+
+empty_a         = cellfun(@(x)isequal(x,[]),a);      	% indicate a that are not specified (empty)
+[defArgs{~empty_a}] = a{~empty_a};                      % replace defaults by non-empty one
