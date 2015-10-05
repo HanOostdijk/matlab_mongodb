@@ -1,5 +1,6 @@
 function mm_drop_database( m,database_name )
 % drop database 
+% This software is distributed under the MIT License (MIT): see copyright.txt 
 
 %{
 m                   : handle to MongoDB client

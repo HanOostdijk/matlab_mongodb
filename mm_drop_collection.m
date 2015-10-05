@@ -1,4 +1,5 @@
 function mm_drop_collection( db,collection_name )
+% This software is distributed under the MIT License (MIT): see copyright.txt 
 % drop collection from database
 
 %{

@@ -1,5 +1,6 @@
 function defArgs = setOptArgs(a,defArgs)
 % set non-specified optional parameters to default values
+% This software is distributed under the MIT License (MIT): see copyright.txt 
 
 %{
 idea from Omid Khanmohamadi on matlabcentral

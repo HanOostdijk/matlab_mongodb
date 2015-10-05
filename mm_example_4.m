@@ -1,5 +1,5 @@
 %% examples handling the result of the query
-
+% This software is distributed under the MIT License (MIT): see copyright.txt 
 javaaddpath('D:\data\magweg\MatLab\mongo-java-driver-3.0.2.jar')
 % https://oss.sonatype.org/content/repositories/releases/org/mongodb/mongodb-driver/3.0.2/
 % downloaded 20jul2015

@@ -30,6 +30,8 @@ Utility functions used:
 Acknowledgements:
  * Guillaume A. for his MATLAB Central [article]  (http://uk.mathworks.com/matlabcentral/fileexchange/43171-use-of-mongodb-java-driver) that inspired this repository
  * Yair Altman for his [checkClass](http://uk.mathworks.com/matlabcentral/fileexchange/26947-checkclass-inspect-a-java-matlab-class-object-name) that helped debugging these functions
+ 
+ This software is distributed under the MIT License (MIT): see copyright.txt 
 
 
  

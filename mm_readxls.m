@@ -1,6 +1,7 @@
 function mm_readxls(col, wc, xls_s, varargin)
 % read the contents of an xls file into a collection
 % or alternatively create test_data to insert in collection
+% This software is distributed under the MIT License (MIT): see copyright.txt 
 
 %{
 coll                : collection to write to
