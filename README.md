@@ -10,13 +10,14 @@ More information about working with MongoDB can be found e.g [here](http://docs.
 Examples of MATLAB functions that use the MongoDB java driver:
 * mm_example_1a.m : reads an xls-file into MongoDB collection
 * mm_example_1b.m : generates some testdata and insert these in a MongoDB collection (for use in later examples)
-* mm_readxls.m : function used in mm_example_1(a)(b) that does the actual insert of a document in the collection
-* mm_example_2.m : lists the collections and number of documents in the collections with the databases they belong to
-* mm_example_3.m : gives examples of queries in which certain documents and/or fields in documents are selected
-* mm_example_4.m : example of handling the results a query
-* mm_example_5.m : example of an aggregation pipeline
-* mm_example_6.m : example of adding a field by using a classification
-* mm_example_7.m : example of a mapreduce
+* mm_readxls.m    : function used in mm_example_1(a)(b) that does the actual insert of a document in the collection
+* mm_example_2.m  : lists the collections and number of documents in the collections with the databases they belong to
+* mm_example_3.m  : gives examples of queries in which certain documents and/or fields in documents are selected
+* mm_example_3a.m : more examples of selection of fields (projection) and document with a given object id
+* mm_example_4.m  : example of handling the results a query
+* mm_example_5.m  : example of an aggregation pipeline
+* mm_example_6.m  : example of adding a field by using a classification
+* mm_example_7.m  : example of a mapreduce
 
 mm_examples 2-6 use the testdata generated in mm_example_1b   
 mm_example_7 uses the collection from mm_example_6
