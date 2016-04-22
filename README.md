@@ -2,7 +2,7 @@
 This repository contains examples that show how to use MongoDB databases in the MATLAB environment with the MongoDB java driver. 
 To run the examples I used the following configuration on Windows 8.1 (64-bit) :
 * MATLAB: the version used was the prerelease of MATLAB 8.6 R2015b (no toolboxes necessary)
-* java driver: mongo-java-driver-3.0.2.jar 
+* java driver: mongo-java-driver-3.0.2.jar (current version in mm_java_driver)
 * MongoDB: mongodb-win32-x86_64-2008plus-ssl-3.1.4-signed.msi
 
 More information about working with MongoDB can be found e.g [here](http://docs.mongodb.org/manual/core/crud-introduction/).
@@ -26,6 +26,7 @@ Utility functions used:
 * mm_cursor_showcontents.m : shows the documents that a cursor points to
 * mm_drop_collection.m : drops (removes) a collection if it exists
 * mm_drop_database.m : drops (removes) a database if it exists
+* mm_java_driver : indicate which driver to use
 * setOptArgs.m : handles optional arguments of a function
 
 Acknowledgements:
