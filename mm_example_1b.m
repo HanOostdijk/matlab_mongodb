@@ -22,3 +22,5 @@ mm_readxls(col,wc,[],[],true) ;                         % generate testdata
 cur = col.find('').skip(18).limit(5) ;                  % list 5 documents after skipping the first 18
 fprintf('cursor contains %.0f documents\n',cur.size())
 mm_cursor_showcontents( cur ) ;                         % show contents (later examples will extract document fields)
+%% close connection
+m.close() ;                                             % close connection

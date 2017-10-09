@@ -25,3 +25,5 @@ while cur_db.hasNext()                                 	% while more database na
             dbname, colname, cur_doc.size());
     end
 end
+%% close connection
+m.close() ;                                             % close connection

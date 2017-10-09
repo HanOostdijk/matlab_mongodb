@@ -50,3 +50,5 @@ while cur.hasNext()                                     % when more documents in
     	x.TransactionAmount , ...  
     	x.Description ) ; 
 end   
+%% close connection
+m.close() ;                                             % close connection

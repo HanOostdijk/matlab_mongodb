@@ -28,7 +28,7 @@ xlate_table = { ...                                     % for header translation
 'Omschrijving', 'Description' 
 } ;
 
-mm_readxls(col,wc,xls_file,xlate_table,false) ;     	% read the file (do not use testdata) and translate headers
+mm_readxls(col,wc,xls_file,xlate_table,false) ;          % read the file (use testdata) and translate headers
 
 %% read some documents to check if all went well
 % (precise extraction of fields will be shown later)
@@ -36,5 +36,6 @@ mm_readxls(col,wc,xls_file,xlate_table,false) ;     	% read the file (do not use
 cur = col.find('').skip(18).limit(5) ;                  % list 5 documents after skipping the first 18
 fprintf('cursor contains %.0f documents\n',cur.size())
 mm_cursor_showcontents( cur ) ;                         % show contents (later examples will extract document fields)
-
+%% close connection
+m.close() ;                                             % close connection
         

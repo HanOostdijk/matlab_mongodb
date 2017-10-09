@@ -91,3 +91,5 @@ col.aggregate(aggr_list);                               % do the aggregation (ag
 cur = db.getCollection('aggr_test').find() ;            % cursor to newly created collection
 fprintf('output should be identical:\n')
 mm_cursor_showcontents( cur ) ;                         % and show the contents of the collection
+%% close connection
+m.close() ;                                             % close connection

@@ -56,6 +56,7 @@ cur1  =  col.mapReduce(mpc ).results().iterator();      % execute the map-reduce
 %}
 %% first method to retrieve values: 
 %   use BasicDBObject methods
+fprintf('Results first method\n') ;
 while cur1.hasNext()                                    % when more data is available
     x               = cur1.next() ;                  	% contents of  next document
     x0x5F_id        = x.get('_id') ;                 	% (composite) key field
@@ -80,6 +81,7 @@ addpath('D:\data\matlab\jsonlab')
 % http://www.mathworks.com/matlabcentral/fileexchange/
 % 33381-jsonlab--a-toolbox-to-encode-decode-json-files-in-matlab-octave
 %  05 Jun 2015
+fprintf('Results second method\n') ;
 cur2 = col2.find('') ;                                  % cursor to map-reduce results
 while cur2.hasNext()                                    % when more data is available
     x               = cur2.next() ;                     % contents of  next document
@@ -99,3 +101,5 @@ while cur2.hasNext()                                    % when more data is avai
         'Count %3.0f TransactionAmount %10.2f\n'], ...
         AccountNumber, Tag, DC, Count, Amount)
 end
+%% close connection
+m.close() ;                                             % close connection

@@ -52,5 +52,6 @@ grp1 = BasicDBObject('$group',  grp1a) ;                % pipe-line command grou
 aggr_list.add(grp1);                                    % add grouping to pipeline list
 cur = col.aggregate(aggr_list).results().iterator();  	% cursor to results of the aggregation
 mm_cursor_showcontents( cur ) ; 
-
+%% close connection
+m.close() ;                                             % close connection
 
