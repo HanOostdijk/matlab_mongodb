@@ -61,3 +61,5 @@ cur = col.find(query)  ;   	                            % cursor to selected oid
 mm_cursor_showcontents( cur ) ; 
 %% when the object id shows as long hex string 
 % use { "_id": ObjectId("4ecbe7f9e8c1c9092c000027") } 
+%% close connection
+m.close() ;                                             % close connection
